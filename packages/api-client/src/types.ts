@@ -1,6 +1,15 @@
+import type { IntegrationContext } from '@vue-storefront/core';
+import { AxiosInstance } from 'axios';
+
 export type TODO = unknown;
 
-export type Setttings = TODO;
+export type Context = IntegrationContext<AxiosInstance>;
+
+export type Setttings = {
+  api: {
+    url: string;
+  };
+};
 
 export type Endpoints = TODO;
 
